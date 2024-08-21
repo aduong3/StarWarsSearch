@@ -1,0 +1,124 @@
+:root{
+    --background: rgb(66, 6, 66);
+    --displayBackground: rgb(92, 13, 92);
+    --background_image: url('starwars_bg.jpg');
+    --transparent: rgba(0, 0, 0, 0.568);
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: var(--background_image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    flex: 1;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    gap: 6px;
+}
+
+.display-info{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 30%;
+    gap: 12px;
+    background: var(--transparent);
+    border-radius: 10px;
+    overflow-y: scroll;
+    flex: 1;
+    min-height: 30%;
+}
+
+.display-info p{
+    margin: 12px auto;
+}
+
+.display-info::-webkit-scrollbar{
+    scrollbar-width: thin;
+}
+.display-info:hover::-webkit-scrollbar-thumb{
+    background: rgba(218, 218, 218, 0.178);
+}
+
+.searchButton{
+    font-size: 1.2rem;
+}
+
+.searchButton:hover{
+    cursor: pointer;
+    color: skyblue;
+    font-size: 1.3rem;
+}
+
+.beginning-warning{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    background: var(--background);
+    text-align: center;
+    padding: 6px;
+    gap: 8px;
+}
+.continue-button:hover{
+    cursor: pointer;
+}
+footer{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.confirmation{
+    background: var(--background);
+    position: fixed;
+    display: none; /* flex */
+    flex-direction: column;
+    text-align: center;
+    bottom: 0;
+}
+.yes-no{
+    display: flex;
+    margin-top: 24px;
+    justify-content: space-evenly;
+}
+
+.yes-no h2:hover{
+    cursor: pointer;
+    color: skyblue;
+    font-size: 1.6rem;
+}
+
+.clearStorage:hover{
+    cursor: pointer;
+    color: skyblue;
+}

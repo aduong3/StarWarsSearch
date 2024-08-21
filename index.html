@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+    <div class="form-container">
+    <form action="">
+        <label for="seekInfo">What information are you looking for?</label>
+        <select name="seekInfo" id="seekInfo">
+            <option value="default" id="default_option" selected>Select a category</option>
+        </select>
+        
+        <label for="findNewInfo"></label>
+        <select name="findNewInfo" id="findNewInfo">
+            <option value="default" id="default_option" selected>Select a category first</option>
+        </select>
+        <p class="searchButton">Search</p>
+    </form>
+</div>
+    <div class="display-info" style="display: none;"></div>
+    <div class="beginning-warning">
+        <h1>Star Wars API</h1>
+        <p>This is my first time using an API, so currently the website is slow when it comes to parsing the information.
+            Please keep this in mind! The longer you stay, the more complete the search. Then it will be faster next time!</p>
+        <h1 class="continue-button">Continue</h1>
+    </div>
+    <footer>
+        <div class="confirmation">
+            <h2 class="confirm-text">Are you sure you want to continue?</h2>
+            <div class="yes-no">
+            <h2 class="yes">Yes</h2>
+            <h2 class="no">No</h2>
+            </div>
+        </div>
+        <h2 class="clearStorage">Clear Saved Data</h2>
+    </footer>
+    <script src="APIasync.js"></script>
+</body>
+</html>
